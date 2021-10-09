@@ -47,3 +47,9 @@ function media() {
 
     document.getElementById("resultado_med").value = resultado;
 }
+
+function limpar() {
+    document.getElementById('n1').value = "";
+    document.getElementById('n2').value = "";
+    document.getElementById('resultado_soma').value = "";
+}
