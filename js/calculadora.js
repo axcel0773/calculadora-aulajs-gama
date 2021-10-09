@@ -8,8 +8,8 @@ function somar() {
 }
 
 function subtracao() {
-    n1 = document.getElementById('n1_sub').value;
-    n2 = document.getElementById('n2_sub').value;
+    n1 = document.getElementById("n1_sub").value;
+    n2 = document.getElementById("n2_sub").value;
 
     resultado = Number.parseInt(n1) - Number.parseInt(n2);
 
@@ -17,8 +17,8 @@ function subtracao() {
 }
 
 function multiplicacao() {
-    n1 = document.getElementById('n1_mult').value;
-    n2 = document.getElementById('n2_mult').value;
+    n1 = document.getElementById("n1_mult").value;
+    n2 = document.getElementById("n2_mult").value;
 
     resultado = Number.parseInt(n1) * Number.parseInt(n2);
 
@@ -26,10 +26,21 @@ function multiplicacao() {
 }
 
 function divisao() {
-    n1 = document.getElementById('n1_divd').value;
-    n2 = document.getElementById('n2_divd').value;
+    n1 = document.getElementById("n1_divd").value;
+    n2 = document.getElementById("n2_divd").value;
 
     resultado = Number.parseInt(n1) / Number.parseInt(n2);
+
+    window.alert(resultado);
+}
+
+function media() {
+    n1 = document.getElementById("n1_med").value;
+    n2 = document.getElementById("n2_med").value;
+    n3 = document.getElementById("n3_med").value;
+
+    resultado =
+        (Number.parseInt(n1) + Number.parseInt(n2) + Number.parseInt(n3)) / 3;
 
     window.alert(resultado);
 }
