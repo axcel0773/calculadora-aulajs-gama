@@ -4,7 +4,7 @@ function somar() {
 
     resultado = Number.parseInt(n1) + Number.parseInt(n2);
 
-    window.alert(resultado);
+    document.getElementById("resultado_soma").value = resultado;
 }
 
 function subtracao() {
@@ -13,7 +13,7 @@ function subtracao() {
 
     resultado = Number.parseInt(n1) - Number.parseInt(n2);
 
-    window.alert(resultado);
+    document.getElementById("resultado_sub").value = resultado;
 }
 
 function multiplicacao() {
@@ -22,7 +22,7 @@ function multiplicacao() {
 
     resultado = Number.parseInt(n1) * Number.parseInt(n2);
 
-    window.alert(resultado);
+    document.getElementById("resultado_mult").value = resultado;
 }
 
 function divisao() {
@@ -31,7 +31,7 @@ function divisao() {
 
     resultado = Number.parseInt(n1) / Number.parseInt(n2);
 
-    window.alert(resultado);
+    document.getElementById("resultado_divd").value = resultado;
 }
 
 function media() {
@@ -40,7 +40,10 @@ function media() {
     n3 = document.getElementById("n3_med").value;
 
     resultado =
-        (Number.parseInt(n1) + Number.parseInt(n2) + Number.parseInt(n3)) / 3;
+        (Number.parseFloat(n1) +
+            Number.parseFloat(n2) +
+            Number.parseFloat(n3)) /
+        3;
 
-    window.alert(resultado);
+    document.getElementById("resultado_med").value = resultado;
 }
