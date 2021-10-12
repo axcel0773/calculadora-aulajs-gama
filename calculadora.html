@@ -10,51 +10,65 @@
         <main>
             <div>
                 <h1>Soma</h1>
-                <input type="number" id="n1" />
+                <input type="number" class="form" id="n1" />
                 +
-                <input type="number" id="n2" />
-                = <input type="text" id="resultado_soma" disabled />
+                <input type="number" class="form" id="n2" />
+                = <input type="text" class="form" id="resultado_soma" disabled />
                 <button type="button" onclick="somar()">Somar</button>
+                <div class="error"></div>
             </div>
             <div>
                 <h1>Subtrair</h1>
-                <input type="number" id="n1_sub" />
+                <input type="number" class="form" id="n1_sub" />
                 -
-                <input type="number" id="n2_sub" />
-                = <input type="text" id="resultado_sub" disabled />
+                <input type="number" class="form" id="n2_sub" />
+                = <input type="text" class="form" id="resultado_sub" disabled />
                 <button type="button" onclick="subtracao()">Subtrair</button>
+                <div class="error"></div>
             </div>
             <div>
                 <h1>Multiplicar</h1>
-                <input type="number" id="n1_mult" />
+                <input type="number" class="form" id="n1_mult" />
                 *
-                <input type="number" id="n2_mult" />
-                = <input type="text" id="resultado_mult" disabled />
+                <input type="number" class="form" id="n2_mult" />
+                = <input type="text" class="form" id="resultado_mult" disabled />
                 <button type="button" onclick="multiplicacao()">
                     Multiplicar
                 </button>
+                <div class="error"></div>
             </div>
             <div>
                 <h1>Dividir</h1>
-                <input type="text" id="n1_divd" />
+                <input type="text" class="form" id="n1_divd" />
                 /
-                <input type="text" id="n2_divd" />
-                = <input type="text" id="resultado_divd" disabled />
+                <input type="text" class="form" id="n2_divd" />
+                = <input type="text" class="form" id="resultado_divd" disabled />
                 <button type="button" onclick="divisao()">Dividir</button>
+                <div class="error"></div>
             </div>
             <div>
                 <h1>Média de 3 valores</h1>
-                <input type="number" id="n1_med" />
+                <input type="number" class="form" id="n1_med" />
                 +
-                <input type="number" id="n2_med" />
+                <input type="number" class="form" id="n2_med" />
                 +
-                <input type="number" id="n3_med" />
-                = <input type="text" id="resultado_med" disabled />
+                <input type="number" class="form" id="n3_med" />
+                = <input type="text" class="form" id="resultado_med" disabled />
                 <button type="button" onclick="media()">Média</button>
+                <div class="error"></div>
             </div>
             <div>
                 <button type="button" onclick="limpar()">Limpar</button>
+                <button type="button" onclick="limpa_array()">Limpar com array</button>
+                <button type="button" onclick="limpa_for_each()">Limpar com for each</button>
             </div>
+
+            <div id="loop">
+
+            </div>
+            <button type="button" onclick="example_loop()">Loop</button>
+            <button type="button" onclick="example_while()">Loop while</button>
+            <button type="button" onclick="example_do_while()">Loop Do While</button>
         </main>
     </body>
     <script src="js/calculadora.js"></script>
